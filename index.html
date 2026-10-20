@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lucas Levy Chantelou</title>
+<link rel="canonical" href="https://lucaschantelou.com/">
+<meta name="description" content="Software development student in Copenhagen and founder of Dandelion. Backend, distributed systems, platform and DevOps.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2317202B'/%3E%3Ctext x='16' y='22' font-family='sans-serif' font-size='16' font-weight='700' fill='white' text-anchor='middle'%3ELC%3C/text%3E%3C/svg%3E">
+<style>
+  @font-face { font-family: "Atkinson Hyperlegible Next"; font-style: normal; font-weight: 400; font-display: swap; src: url("/fonts/atkinson-hyperlegible-next-latin-400-normal.woff2") format("woff2"); }
+  @font-face { font-family: "Atkinson Hyperlegible Next"; font-style: normal; font-weight: 500; font-display: swap; src: url("/fonts/atkinson-hyperlegible-next-latin-500-normal.woff2") format("woff2"); }
+  @font-face { font-family: "Atkinson Hyperlegible Next"; font-style: normal; font-weight: 700; font-display: swap; src: url("/fonts/atkinson-hyperlegible-next-latin-700-normal.woff2") format("woff2"); }
+  @font-face { font-family: "Atkinson Hyperlegible Next"; font-style: normal; font-weight: 800; font-display: swap; src: url("/fonts/atkinson-hyperlegible-next-latin-800-normal.woff2") format("woff2"); }
+  :root {
+    --paper: #F7F8FA;
+    --ink: #17202B;
+    --muted: #57616C;
+    --line: #DCE1E7;
+    --link: #1F5FA8;
+    --yellow: #F2C21B;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Atkinson Hyperlegible Next", "Atkinson Hyperlegible", system-ui, sans-serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+  }
+  a { color: var(--link); text-underline-offset: 0.2em; text-decoration-thickness: 1px; }
+  a:hover { text-decoration-thickness: 2px; }
+  :focus-visible { outline: 3px solid var(--link); outline-offset: 3px; border-radius: 2px; }
+
+  .page { max-width: 64rem; margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+  .intro { padding-bottom: 3.5rem; }
+  .name { font-weight: 700; font-size: 1.1rem; margin: 0 0 2.5rem; }
+  .intro h1 {
+    font-weight: 800;
+    font-size: clamp(2.6rem, 7.4vw, 5.6rem);
+    line-height: 1.0;
+    letter-spacing: -0.03em;
+    margin: 0 0 2.25rem;
+    max-width: 14ch;
+  }
+  .intro p { max-width: 38rem; margin: 0 0 1rem; font-size: 1.2rem; }
+  .intro .status { color: var(--muted); font-size: 1.05rem; }
+  .links { display: flex; flex-wrap: wrap; gap: 0.5rem 1.75rem; margin: 2rem 0 0; padding: 0; list-style: none; font-weight: 700; }
+  .dot { display: inline-block; width: 0.55em; height: 0.55em; border-radius: 50%; background: var(--yellow); margin-right: 0.35em; vertical-align: 0.05em; }
+
+  section {
+    display: grid;
+    grid-template-columns: 12rem minmax(0, 1fr);
+    gap: 1rem 3rem;
+    padding: 3rem 0;
+    border-top: 1px solid var(--line);
+  }
+  section h2 { font-size: 1.05rem; font-weight: 700; margin: 0.2rem 0 0; }
+
+  .work { list-style: none; margin: 0; padding: 0; }
+  .work li { padding: 0 0 2.25rem; max-width: 42rem; }
+  .work li:last-child { padding-bottom: 0; }
+  .work h3 { font-size: 1.3rem; line-height: 1.3; margin: 0 0 0.4rem; letter-spacing: -0.01em; }
+  .work p { margin: 0 0 0.5rem; }
+  .work .stack { color: var(--muted); font-size: 0.95rem; }
+
+  .timeline { list-style: none; margin: 0; padding: 0; }
+  .timeline li { display: grid; grid-template-columns: 9rem minmax(0, 1fr); gap: 0.25rem 1.5rem; padding: 0 0 1.25rem; }
+  .timeline li:last-child { padding-bottom: 0; }
+  .timeline .when { color: var(--muted); font-variant-numeric: tabular-nums; }
+  .timeline .what strong { display: block; font-weight: 700; }
+  .timeline .what span { color: var(--muted); }
+
+  .plain p { margin: 0 0 0.75rem; max-width: 42rem; }
+
+  @media (max-width: 720px) {
+    .page { padding-top: 2rem; }
+    section { grid-template-columns: 1fr; padding: 2.5rem 0; }
+    .timeline li { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<main class="page">
+  <header class="intro">
+    <p class="name">Lucas Levy Chantelou</p>
+    <h1>I like hard problems and tidy solutions.</h1>
+    <p>I'm a third-year software development student at Erhvervsakademi København in Copenhagen, and I run <a href="https://dandelion.dk"><span class="dot" aria-hidden="true"></span>Dandelion</a>, a one-person software company. I'm most at home in backend and distributed systems, platform and DevOps work, AI integrations and security.</p>
+    <p class="status">Open to part-time student developer roles alongside my studies.</p>
+    <ul class="links">
+      <li><a href="mailto:levy.chantelou@gmail.com">Email</a></li>
+      <li><a href="https://github.com/Luke3520">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/lucaslevychantelou">LinkedIn</a></li>
+    </ul>
+  </header>
+
+  <section>
+    <h2>Selected work</h2>
+    <ul class="work">
+      <li>
+        <h3>BikeRentalOps</h3>
+        <p>A bike rental platform for a Copenhagen hotel that replaced a paper process. It started as my final AP project; the hotel asked me to build it out, and staff now use it every day. I moved it from Azure to Hetzner and deploy it with Docker, GitHub Actions and Nginx.</p>
+        <p class="stack">Spring Boot, React, Docker, GitHub Actions, Nginx, Hetzner. <a href="https://bikerentalops.com">bikerentalops.com</a></p>
+      </li>
+      <li>
+        <h3>Finding a bottleneck that wasn't the CPU</h3>
+        <p>I added Prometheus and Grafana to a deployed web app and wrote a k6 load suite against it. Under concurrent load, latency climbed while CPU stayed low: requests were waiting, not working. The cause was an exhausted HikariCP connection pool.</p>
+        <p class="stack">k6, Prometheus, Grafana</p>
+      </li>
+      <li>
+        <h3>An end-to-end quality gate for a government agency</h3>
+        <p>During my internship at Styrelsen for Grøn Arealomlægning og Vandmiljø, I built a Playwright suite covering the GUDP case-handling workflows and put it in CI as a quality gate. Manual regression testing there could take days to weeks; the gate caught bugs before they shipped.</p>
+        <p class="stack">Playwright, CI, agile team working in SAFe</p>
+      </li>
+      <li>
+        <h3>Shopify and POS integration</h3>
+        <p>For a wine retailer with a shop, a restaurant and a webshop, I'm designing a two-way integration between Shopify and their point-of-sale system: OAuth 2.0 client credentials, webhooks where they exist and polling where they don't, idempotent order handling, and mapping Shopify SKUs to POS product IDs.</p>
+        <p class="stack">Shopify, REST, OpenAPI, OAuth 2.0</p>
+      </li>
+      <li>
+        <h3>A website for blind residents</h3>
+        <p>A housing association site that meets WCAG 2.1 AA, checked with the NVDA screen reader, while still working visually for sighted staff and families.</p>
+        <p class="stack">WCAG 2.1 AA, NVDA</p>
+      </li>
+      <li>
+        <h3>Vin Guide</h3>
+        <p>A group exam project: a local, Danish-language wine recommender running gemma3:4b through Ollama, with LangGraph, hybrid SQL and vector retrieval, and a Discord agent connected over MCP.</p>
+        <p class="stack">Ollama, LangGraph, MCP</p>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+    <ol class="timeline" reversed>
+      <li><span class="when">2026 to now</span><span class="what"><strong>Founder, Dandelion</strong><span>Software for small businesses in Copenhagen</span></span></li>
+      <li><span class="when">Aug to Nov 2025</span><span class="what"><strong>IT developer intern</strong><span>Styrelsen for Grøn Arealomlægning og Vandmiljø</span></span></li>
+      <li><span class="when">2023 to now</span><span class="what"><strong>Receptionist</strong><span>Arp-Hansen Hotel Group, Steel House Copenhagen</span></span></li>
+      <li><span class="when">2011 to 2019</span><span class="what"><strong>Wine sales assistant</strong><span>Alverdensvine</span></span></li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <ol class="timeline" reversed>
+      <li><span class="when">Expected June 2027</span><span class="what"><strong>Bachelor in Software Development</strong><span>Erhvervsakademi København (EK)</span></span></li>
+      <li><span class="when">Completed</span><span class="what"><strong>AP Degree in Computer Science (datamatiker)</strong><span>KEA, with the cyber security elective</span></span></li>
+      <li><span class="when">Completed</span><span class="what"><strong>AP Degree in Financial Management (finansøkonom)</strong></span></li>
+    </ol>
+  </section>
+
+  <section class="plain">
+    <h2>Languages</h2>
+    <div><p>Danish and English.</p></div>
+  </section>
+</main>
+</body>
+</html>
